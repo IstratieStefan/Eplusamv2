@@ -1,3 +1,3 @@
 load_map("homev2", coord[2, 3, 0], NORTH);
-add_character("Player female v2", coord[2, -5, 0], "femel");
+add_character("Player female v2", coord[-2, -2, 1], "femel");
 start_dialogue("intro");

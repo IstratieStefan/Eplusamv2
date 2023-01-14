@@ -1,3 +1,0 @@
-display_message("Hello, world!");
-add_character("Player", "tile_id", "entity_id");
-move_character(self, "tile_id");
