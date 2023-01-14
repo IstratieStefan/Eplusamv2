@@ -1,0 +1,10 @@
+load_map("homev2", coord[2, 3, 0], NORTH);
+add_character("Player female v2", coord[2, -5, 0], "femel");
+display_message("Salut calatorule!", entity["femel"]);
+display_message("U.. un...unde sunt?", player);
+display_message("Esti în Eplusam! Locul unde matematica a luat nastere. De mii de ani acest loc sacru a fost in armonie cu matematica, cel putin pana s-a intamplat...", entity["femel"]);
+display_message("Ce s-a intamplat?", player);
+display_message("In ultimul timp, Minuseus, un mare hot si tiran, a furat nucleul matematicii, din templul sacru. Fara nucleu, matematica v-a disparea, iar odata cu ea si Eplusamul!", entity["femel"]);
+display_message("Voi recupera nucleul si voi salva Eplusamul!", player);
+display_message("Sa stii ca multi au incercat, dar pana acum toti au esuat! Totusi, daca intradevar crezi ca ne vei putea salva, v-a trebui sa ajungi la castelul lui Minuseus, unde va trebui sa-l confrunti! Mult noroc, o sa ai nevoie!", entity["femel"]);
+$result = display_choices("What is your choice?", array["Choice 1", "Choice 2", "Choice 3"], entity["femel"]);
