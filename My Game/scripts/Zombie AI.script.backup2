@@ -1,0 +1,1 @@
+move_character(entity["iddd"], coord[5, 5, 0]);

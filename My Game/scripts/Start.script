@@ -1,0 +1,2 @@
+load_map("homev2", coord[3, 3, 0], NORTH);
+execute_script("Zombie AI", false);

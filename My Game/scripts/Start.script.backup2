@@ -1,0 +1,4 @@
+load_map("homev2", coord[3, 3, 0], NORTH);
+add_character("Inamic", coord[5, 5, 0]);
+assign_entity_id(tile[5, 5, 1], "iddd");
+execute_script("Zombie AI", false);
