@@ -1,5 +1,6 @@
 load_map("homev2", coord[2, 3, 0], NORTH);
 add_character("Player female v2", coord[2, -5, 0], "femel");
+start_dialogue("intro");
 display_message("Salut calatorule!", entity["femel"]);
 display_message("U.. un...unde sunt?", player);
 display_message("Esti în Eplusam! Locul unde matematica a luat nastere. De mii de ani acest loc sacru a fost in armonie cu matematica, cel putin pana s-a intamplat...", entity["femel"]);
