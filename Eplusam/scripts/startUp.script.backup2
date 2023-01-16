@@ -1,2 +1,2 @@
-load_map("homev2", coord[1, 13, 0], NORTH);
+load_map("homev2", coord[-1, -7, 0], NORTH);
 start_dialogue("intro");
