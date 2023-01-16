@@ -1,10 +1,15 @@
 $result = display_choices("Esti gata pentru o batalie matematica?", array["Da", "Nu"], entity["npc_id"]);
-
-if true then
-	$nr1 = random(0 , 100);
-	$nr2 = random(0 , 100);
-	$arr = array[str(random(0 , 100)), str(random(0 , 100)), str(random(0 , 100))];
-	$arr[random(0, 2)] = str($nr1 + $nr2);
-	$resp = "Cat fac " + str($nr1) + " + " + str($nr2) + "?";
-	$result = display_choices($resp, $arr, entity["npc_id"]);
+if $result == 0 then
+  $nr1 = random(0, 100);
+  $nr2 = random(0, 100);
+  $arr = array[str(random(0, 100)), str(random(0, 100)), str(random(0, 100))];
+  $val = str($nr1 + $nr2);
+  $arr[random(0, 2)] = $val;
+  $resp = "Cat fac " + str($nr1) + " + " + str($nr2) + "?";
+  $result = display_choices($resp, $arr, entity["npc_id"]);
+  if $val == $arr[$result] then
+    display_message("Corect!");
+  else
+    display_message("Gresit!");
+  end;
 end;
