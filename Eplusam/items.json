@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "ITEM_0001",
+      "name": "Incetinitor",
+      "description": "Dubleaza timpul pe care il ai pentru a raspunde",
+      "tags": [],
+      "properties": {},
+      "stackable": false,
+      "equippable": false,
+      "effects": [{"amount":1,"stat":"attack","type":"stat_boost"}],
+      "droppable": false,
+      "image": "Unknown.png",
+      "usable": true,
+      "num_of_uses": 1,
+      "script": ""
+    }
+  ],
+  "localized": false
+}

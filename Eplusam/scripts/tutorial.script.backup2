@@ -1,0 +1,4 @@
+load_map("Tutorial", coord[3, 6, 0], NORTH);
+add_effect("sparkle", coord[4, -16, 2], "ef");
+enable_effect(entity["ef"]);
+start_dialogue("moveTutorial");

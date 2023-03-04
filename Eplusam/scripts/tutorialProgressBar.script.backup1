@@ -1,0 +1,4 @@
+global.property["currentTime"] = global.property["progressTime"];
+while global.property["currentTime"] > 0 do
+  global.property["currentTime"] -= 1;
+end;

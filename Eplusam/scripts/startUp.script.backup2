@@ -1,2 +1,4 @@
-load_map("homev2", coord[-1, -7, 0], NORTH);
-start_dialogue("intro");
+$pr = load_data("progress");
+if $pr == "tutorial" then
+  execute_script("tutorial", false);
+end;

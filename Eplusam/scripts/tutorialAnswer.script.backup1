@@ -1,0 +1,7 @@
+$text = widget["tutorialNumere"].element["0001"].text;
+if $text == "8" then
+  display_message("Foarte bine!");
+  start_dialogue("powerTutorial");
+else
+  display_message("Raspunsul este gresit, mai incearca!");
+end;

@@ -1,2 +1,1 @@
-load_map("homev2", coord[-1, -7, 0], NORTH);
-start_dialogue("intro");
+$ok = display_choices("Inainte de a incepe jocul, doreste sa incerci tutorialul? Daca nu ai mai jucat pana acum Eplusam, recomandam tutorialul.", array["Da", "Nu"], initiator);
