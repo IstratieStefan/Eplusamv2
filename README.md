@@ -30,4 +30,6 @@ O să fie screenshot-uri, promitem
 jocul a fost inspirat din: 
 
 - Minecraft (aspectul jocului)
+- Forager (aspectul jocului)
+- Pokemon generația a 8-a (aspectul luptelor)
 - Pokemon generația a 3-a (sistemul de lupta si structura hartii)
