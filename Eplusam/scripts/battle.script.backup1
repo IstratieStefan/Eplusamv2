@@ -1,0 +1,37 @@
+$dat = data[global.property["battleID"]];
+load_map($dat["arena"], coord[1, -3, 0], SOUTH);
+add_effect("summon", coord[1, 2, 16], "eff0");
+add_effect("summon", coord[-2, 2, 16], "eff1");
+add_effect("summon", coord[4, 2, 16], "eff2");
+add_effect("summon", coord[1, 5, 16], "eff3");
+add_effect("summon", coord[4, 5, 16], "eff4");
+add_effect("summon", coord[-2, 5, 16], "eff5");
+for $i in range(0, 6) do
+  disable_effect(entity["eff" + str($i)]);
+end;
+lock_camera();
+set_player_interaction_locked(true);
+set_player_movement_locked(true);
+$index = 0;
+move_camera(coord[-6, 0, 80], coord[1, 0, 0]);
+for $enemy in $dat["positions"] do
+  if $dat["positions"][$index] != "-" then
+    enable_effect(entity["eff" + str($index)]);
+    wait(0.6);
+    add_character($dat["positions"][$index], "e" + str($index), "enemy" + str($index));
+    rotate_entity_towards(entity["enemy" + str($index)], tile[1, -3, 0], false);
+    disable_effect(entity["eff" + str($index)]);
+    set_entity_property(entity["enemy" + str($index)], "attackable_in_realtime", true);
+    global.property["aliveEnemies"] += 1;
+    set_entity_property(entity["enemy" + str($index)], "alive", true);
+  end  ;
+  $index += 1;
+end;
+show_widget("healths");
+while global.property["aliveEnemies"] > 0 do
+  if $dat["positions"][$index] != "-" and entity["enemy" + str($index)].property["alive"] == true then
+    global.property["fighter"] = $index;
+    execute_script("fight", true);
+  end  ;
+  $index += 1;
+end;

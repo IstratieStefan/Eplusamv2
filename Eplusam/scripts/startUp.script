@@ -2,5 +2,5 @@ $ok = display_choices("Inainte de a incepe jocul, doreste sa incerci tutorialul?
 if $ok == 0 then
   execute_script("tutorial", false);
 else
-  execute_script("", false);
+  execute_script("game", false);
 end;

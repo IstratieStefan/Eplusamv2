@@ -1,0 +1,12 @@
+show_widget("answer");
+show_widget("timer");
+$dat = data[global.property["fighter"] + ".json"];
+$rounds = random(data["min"], data["max"]);
+for $i in range(0, $rounds) do
+  $percent = random(1, 100);
+  $nr = 0;
+  while $nr != -1 do
+    if $dat["attacks"][$nr] >= $percent then
+    end;
+  end;
+end;

@@ -6,6 +6,6 @@ set_movement_speed(player, 0);
 move_camera(coord[-6, 0, 80], coord[1, 0, 0]);
 start_dialogue("battleTutorial");
 show_widget("tutorialNumere");
-widget["numere"].element["0005"].text = "6 + 2";
-set_global_property("progressTime", 60);
+show_widget("timer");
+set_global_property("progressTime", 15);
 execute_script("tutorialProgressBar", false);

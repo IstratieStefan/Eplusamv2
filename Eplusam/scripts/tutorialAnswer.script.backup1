@@ -1,7 +1,14 @@
-$text = widget["tutorialNumere"].element["0001"].text;
-if $text == "8" then
+$text = widget["tutorialAnswer"].element["0001"].text;
+if $text == "2" then
   display_message("Foarte bine!");
-  start_dialogue("powerTutorial");
+  global.property["questionCompleted"] = true;
+  if global.property["tutorialBattlePhase"] == 0 then
+    start_dialogue("powerTutorial");
+  else
+    display_message("Felicitari, ai terminat tutorialul! Acum poti intra in joc!");
+    global.property["receiver"] = "answer";
+    execute_script("game", false);
+  end;
 else
   display_message("Raspunsul este gresit, mai incearca!");
 end;

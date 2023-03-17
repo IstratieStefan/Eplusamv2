@@ -9,11 +9,29 @@
       "stackable": false,
       "equippable": false,
       "effects": [{"amount":1,"stat":"attack","type":"stat_boost"}],
+      "tool_item": false,
+      "tool_item_range": 1,
+      "tool_item_script_mode": "entity",
       "droppable": false,
-      "image": "Unknown.png",
+      "image": "TitleBackground.png",
       "usable": true,
       "num_of_uses": 1,
-      "script": ""
+      "script": "Delayer"
+    },
+    {
+      "id": "ITEM_0002",
+      "name": "New Item 1",
+      "description": "",
+      "tags": [],
+      "properties": {},
+      "stackable": false,
+      "equippable": true,
+      "effects": [{"amount":1,"stat":"attack","type":"stat_boost"}],
+      "weapon": true,
+      "weapon_type": "melee",
+      "weapon_max_damage": 3,
+      "image": "Camel.png",
+      "usable": false
     }
   ],
   "localized": false

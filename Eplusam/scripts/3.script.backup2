@@ -1,0 +1,1 @@
+widget[global.property["receiver"]].element["0003"].text = widget[global.property["receiver"]].element["0003"].text + "3";

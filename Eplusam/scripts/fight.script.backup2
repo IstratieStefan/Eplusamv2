@@ -1,0 +1,4 @@
+show_widget("answer");
+show_widget("timer");
+$dat = data[global.property["fighter"] + ".json"];
+$rounds = random(data["min"], data["max"]);

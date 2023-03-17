@@ -7,10 +7,16 @@
       "tags": [],
       "properties": {},
       "stackable": false,
-      "image": "Unknown.png",
+      "equippable": false,
+      "effects": [{"amount":1,"stat":"attack","type":"stat_boost"}],
+      "tool_item": false,
+      "tool_item_range": 1,
+      "tool_item_script_mode": "entity",
+      "droppable": false,
+      "image": "TitleBackground.png",
       "usable": true,
       "num_of_uses": 1,
-      "script": ""
+      "script": "Delayer"
     }
   ],
   "localized": false

@@ -1,0 +1,30 @@
+{
+    "attacks":[
+        {
+            "percent":50,
+            "operations":"+",
+            "numbers":2,
+            "min":0,
+            "max":9
+        },
+        {
+            "percent":75,
+            "operations":"-",
+            "numbers":2,
+            "min":0,
+            "max":9,
+            "negative":false
+        },
+        {
+            "percent":100,
+            "operations":"+",
+            "numbers":2,
+            "min":10,
+            "max":49
+        }
+    ],
+    "min":2,
+    "max":5,
+    "time":7,
+    "margin":75
+}

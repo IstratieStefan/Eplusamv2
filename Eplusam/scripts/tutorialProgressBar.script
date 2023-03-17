@@ -1,5 +1,10 @@
+global.property["progressTime"] *= 10;
+global.property["questionCompleted"] = false;
 global.property["currentTime"] = global.property["progressTime"];
-while global.property["currentTime"] > 0 do
-  wait(1);
+while (global.property["currentTime"] > 0 and global.property["questionCompleted"] == false) do
+  wait(0.1 * global.property["timeAmplifier"]);
   global.property["currentTime"] -= 1;
+end;
+if global.property["questionCompleted"] == false then
+  display_message("Atunci cand rezolvi, trebuie sa fii atent la bara verde de jos. Ea arata cat timp mai ai pentru rezolvarea problemelor, iar acum ai ramas fara timp. Mai incearca odata!");
 end;
