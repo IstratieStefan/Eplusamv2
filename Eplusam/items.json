@@ -13,7 +13,7 @@
       "tool_item_range": 1,
       "tool_item_script_mode": "entity",
       "droppable": false,
-      "image": "TitleBackground.png",
+      "image": "Eplusam.png",
       "usable": true,
       "num_of_uses": 1,
       "script": "Delayer"
