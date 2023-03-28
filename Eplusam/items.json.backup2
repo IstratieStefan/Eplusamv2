@@ -28,7 +28,7 @@
       "properties": {},
       "stackable": true,
       "stack_limit": 20,
-      "droppable": false,
+      "droppable": true,
       "cost": 15,
       "image": "Luck.png",
       "usable": false
