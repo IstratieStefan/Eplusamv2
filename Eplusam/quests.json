@@ -1,5 +1,17 @@
 {
   "quests": [
+    {
+      "id": "QUEST_0001",
+      "name": "Invinge-l pe Eplusam",
+      "description": "Trebuie sa ajungi la piramida lui Eplusam si sa il invingi.",
+      "tags": [],
+    },
+    {
+      "id": "QUEST_0002",
+      "name": "Cartofii magici",
+      "description": "Gaseste cei 3 cartofi magici\n",
+      "tags": [],
+    }
   ],
   "localized": false
 }

@@ -2,8 +2,8 @@
   "quests": [
     {
       "id": "QUEST_0001",
-      "name": "Miscare",
-      "description": "Avanseaza la blocul de piatra.",
+      "name": "Invinge-l pe Eplusam",
+      "description": "Trebuie sa ajungi la piramida lui Eplusam si sa il invingi.",
       "tags": [],
     }
   ],
