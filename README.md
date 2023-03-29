@@ -25,6 +25,7 @@ Asa arata interfata cand castigi
 Exista si alte zone cum ar fi o pestera, o zona inghetata sau un desert
 ![cave](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/cave.png)
 
+scopul jocului este de a invinge vrajitorul Eplusam
 ## Tehnologii folosite
 
 - Git + Github
