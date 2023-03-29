@@ -1,0 +1,8 @@
+display_message("Desi ai pierdut, poti sa mai incerci.");
+wait(2);
+for $i in range(0, 6) do
+  remove_entity(entity["enemy"+str($i)]);
+end;
+load_map(global.property["map"], coord[global.property["x"], global.property["y"], global.property["z"]], SOUTH);
+hide_widget("healths");
+set_player_interaction_locked(false);

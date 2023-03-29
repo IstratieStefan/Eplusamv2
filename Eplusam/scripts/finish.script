@@ -1,0 +1,48 @@
+hide_widget("timer");
+hide_widget("answer");
+execute_script("battleAnimation", true);
+$ok = 1;
+$name = "enemy" + global.property["fighterID"];
+$score = global.property["correctOperations"] / global.property["totalOperations"] * 100;
+$ok = 1;
+if $score >= 60 then
+  $score = $score - 60;
+  $score = $score / 40;
+  entity[$name].property["life"] -= $score * 10 * global.property["damageAmplifier"];
+  if entity[$name].property["life"] <= 0 then
+    remove_entity(entity[$name]);
+    add_character("nothing", "e" + global.property["fighterID"], "enemy" + global.property["fighterID"]);
+    global.property["aliveEnemies"] -= 1;
+    if global.property["aliveEnemies"] == 0 then
+      execute_script("victory", false);
+      $ok = 0;
+    end;
+  end;
+else
+  $score = 60 - $score;
+  $score = $score / 60;
+  global.property["hp"] -= $score * entity[$name].stat["attack"] / global.property["shieldAmplifier"];
+  if global.property["hp"] <= 0 then
+    execute_script("lost", false);
+    $ok = 0;
+  end;
+end;
+if $ok then
+  global.property["fighterID"] += 1;
+  for $i in range(0, 2) do
+    while global.property["fighterID"] < 6 do
+      if entity["enemy" + global.property["fighterID"]].property["life"] > 0 then
+        $ok = 0;
+        break;
+      else
+        global.property["fighterID"] += 1;
+      end;
+    end    ;
+    if $ok == 0 then
+      break;
+    else
+      global.property["fighterID"] = 0;
+    end;
+  end  ;
+  execute_script("prepare", false);
+end;

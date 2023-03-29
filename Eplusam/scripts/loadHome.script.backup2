@@ -1,0 +1,2 @@
+add_effect("sparkle", coord[-5, -11, 1], "ef");
+enable_effect(entity["ef"]);

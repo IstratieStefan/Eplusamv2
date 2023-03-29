@@ -1,0 +1,2 @@
+set_player_movement_locked(false);
+set_player_interaction_locked(false);
