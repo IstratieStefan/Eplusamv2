@@ -17,7 +17,7 @@ Acesta este lumea in care te poti plimba
 ![lume](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/town.png)
 
 Aceasta este o batalie matematematica
-![battle]https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/battle.png)
+![battle](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/battle.png)
 
 Asa arata interfata cand castigi
 ![Win](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/castig.png)
