@@ -1,0 +1,13 @@
+{
+    "arena":"plains colosseum",
+    "positions":[
+        "skeleton",
+        "slime",
+        "-",
+        "-",
+        "-",
+        "-"
+    ],
+    "wage":10,
+    "number":3
+}

@@ -1,24 +1,18 @@
 {
   "items": [
     {
-      "id": "ITEM_0001",
-      "name": "Incetinitor",
-      "description": "Dubleaza timpul pe care il ai pentru a raspunde",
+      "id": "ITEM_0005",
+      "name": "Bandaj",
+      "description": "Iti restabileste viata cu 20%",
       "tags": [],
       "properties": {},
       "stackable": true,
       "stack_limit": 20,
-      "equippable": false,
-      "effects": [{"amount":1,"stat":"attack","type":"stat_boost"}],
-      "tool_item": false,
-      "tool_item_range": 1,
-      "tool_item_script_mode": "entity",
-      "droppable": false,
-      "cost": 20,
-      "image": "Time.png",
+      "droppable": true,
+      "cost": 25,
+      "image": "Bandaid.png",
       "usable": true,
-      "num_of_uses": 1,
-      "script": "Delayer"
+      "num_of_uses": 1
     },
     {
       "id": "ITEM_0002",
@@ -31,12 +25,13 @@
       "droppable": true,
       "cost": 15,
       "image": "Luck.png",
-      "usable": false
+      "usable": true,
+      "num_of_uses": 1
     },
     {
       "id": "ITEM_0003",
       "name": "Otrava",
-      "description": "Otraveste toti inamicii dintr-o batalie",
+      "description": "Dubleaza puterea atacului tau",
       "tags": [],
       "properties": {},
       "stackable": true,
@@ -44,12 +39,13 @@
       "droppable": true,
       "cost": 100,
       "image": "POISON.png",
-      "usable": false
+      "usable": true,
+      "num_of_uses": 1
     },
     {
       "id": "ITEM_0004",
       "name": "Scut",
-      "description": "Te protejeaza de un atac",
+      "description": "Reduce la jumatate atacul primit",
       "tags": [],
       "properties": {},
       "stackable": true,
@@ -57,20 +53,28 @@
       "droppable": true,
       "cost": 50,
       "image": "Shield.png",
-      "usable": false
+      "usable": true,
+      "num_of_uses": 1
     },
     {
-      "id": "ITEM_0005",
-      "name": "Bandaj",
-      "description": "Iti restabileste viata cu 20%",
+      "id": "ITEM_0001",
+      "name": "Timp",
+      "description": "Dubleaza timpul pe care il ai pentru a raspunde",
       "tags": [],
       "properties": {},
       "stackable": true,
       "stack_limit": 20,
+      "equippable": false,
+      "effects": [{"amount":1,"stat":"attack","type":"stat_boost"}],
+      "tool_item": false,
+      "tool_item_range": 1,
+      "tool_item_script_mode": "entity",
       "droppable": true,
-      "cost": 25,
-      "image": "Bandaid.png",
-      "usable": false
+      "cost": 20,
+      "image": "Time.png",
+      "usable": true,
+      "num_of_uses": 1,
+      "script": "Delayer"
     }
   ],
   "localized": false

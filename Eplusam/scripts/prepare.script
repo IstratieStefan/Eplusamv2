@@ -1,3 +1,6 @@
+global.property["timeAmplifier"] = 1;
+global.property["damageAmplifier"] = 1;
+global.property["shieldAmplifier"] = 1;
 show_widget("answer");
 show_widget("timer");
 set_global_property("totalOperations", random(entity["enemy" + global.property["fighterID"]].property["AttCtMin"], entity["enemy" + global.property["fighterID"]].property["AttCtMax"]));

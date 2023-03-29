@@ -11,7 +11,7 @@ if $score >= 60 then
   entity[$name].property["life"] -= $score * 10 * global.property["damageAmplifier"];
   if entity[$name].property["life"] <= 0 then
     remove_entity(entity[$name]);
-    add_character("nothing", "enemy"+global.property["fighterID"], "e"+global.property["fighterID"]);
+    add_character("nothing", "e" + global.property["fighterID"], "enemy" + global.property["fighterID"]);
     global.property["aliveEnemies"] -= 1;
     if global.property["aliveEnemies"] == 0 then
       execute_script("victory", false);
