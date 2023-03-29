@@ -1,1 +1,5 @@
-display_message("Hello, world!");
+display_message("Desi ai pierdut, poti sa mai incerci.");
+wait(2);
+load_map(global.property["map"], coord[global.property["x"], global.property["y"], global.property["z"]], SOUTH);
+hide_widget("healths");
+set_player_interaction_locked(false);

@@ -1,0 +1,1 @@
+load_map("Home Town", coord[-1, 10, 0], NORTH);

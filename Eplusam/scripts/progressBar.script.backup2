@@ -4,8 +4,7 @@ while global.property["currentTime"] > 0 and global.property["questionCompleted"
   wait(global.property["timeAmplifier"]);
   global.property["currentTime"] -= 1;
 end;
-if global.property["questionCompleted"] then
-  print(global.property["questionCompleted"]);
+if global.property["questionCompleted"] == true then
   global.property["questionCompleted"] = false;
   execute_script("finish", false);
 end;

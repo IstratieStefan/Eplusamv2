@@ -2,15 +2,6 @@ player.stat["max_hp"] = 100;
 player.stat["hp"] = 100;
 $dat = data[global.property["battleID"]];
 load_map($dat["arena"], coord[1, -3, 0], SOUTH);
-add_effect("summon", coord[1, 2, 16], "eff0");
-add_effect("summon", coord[-2, 2, 16], "eff1");
-add_effect("summon", coord[4, 2, 16], "eff2");
-add_effect("summon", coord[1, 5, 16], "eff3");
-add_effect("summon", coord[4, 5, 16], "eff4");
-add_effect("summon", coord[-2, 5, 16], "eff5");
-for $i in range(0, 6) do
-  disable_effect(entity["eff" + str($i)]);
-end;
 lock_camera();
 set_player_interaction_locked(true);
 set_player_movement_locked(true);
@@ -35,6 +26,9 @@ for $enemy in $dat["positions"] do
     add_character("nothing", "e" + str($index), "enemy" + str($index));
   end  ;
   $index += 1;
+end;
+if global.property["preScript"] != "" then
+  start_dialogue(global.property["preScript"]);
 end;
 show_widget("healths");
 global.property["fighterID"] = $first;

@@ -1,3 +1,6 @@
+print("ranDivStart");
+print("ranDivStart");
+$x = global.property["input"];
 $divizori = array[];
 $d = 1;
 while $d * $d < $x do
@@ -13,5 +16,7 @@ end;
 $r = len($divizori);
 $r -= 1;
 $r = random(0, $r);
-print($divizori);
-return $divizori[$r];
+global.property["output"] = $divizori[$r];
+print("ranDivEnd");
+print(global.property["output"]);
+print($x);

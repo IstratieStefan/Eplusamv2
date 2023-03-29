@@ -2,10 +2,11 @@
     "arena":"plains colosseum",
     "positions":[
         "-",
+        "skeleton",
         "-",
-        "slime",
-        "slime",
+        "-",
         "-",
         "-"
-    ]
+    ],
+    "wage":5
 }

@@ -33,10 +33,12 @@ for $enemy in $dat["positions"] do
     entity["enemy" + str($index)].stat["hp"] = entity["enemy" + str($index)].stat["max_hp"];
   else
     add_character("nothing", "e" + str($index), "enemy" + str($index));
-    entity["enemy" + str($index)].stat["hp"] = 1;
   end  ;
   $index += 1;
 end;
+if global.property["preScript"] != "" then
+  start_dialogue(global.property["preScript"]);
+end;
 show_widget("healths");
 global.property["fighterID"] = $first;
-execute_script("prepare");
+execute_script("prepare", false);

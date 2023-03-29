@@ -1,7 +1,10 @@
-  global.property["questionCompleted"] = false;
+global.property["questionCompleted"] = true;
 $name = "enemy" + global.property["fighterID"];
 function getNr($x) begin
   $name = "enemy" + global.property["fighterID"];
+  print(entity[$name].property[$x + "Min"]);
+  print(entity[$name].property[$x + "Max"]);
+  print(random(entity[$name].property[$x + "Min"], entity[$name].property[$x + "Max"]));
   return random(entity[$name].property[$x + "Min"], entity[$name].property[$x + "Max"]);
 end;
 $support = entity[$name].property[str(random(1, entity[$name].property["range"]))];
@@ -26,6 +29,9 @@ for $pair in range(1, len($support) / 2 + 1) do
     $ans *= $modifier;
     $previous = $modifier;
   else
+    $x = getNr(substr($support, 0, 1));
+    print($x);
+    print("~~~~~~~~");
     global.property["input"] = $previous;
     execute_script("ranDiv", true);
     $modifier = global.property["output"];

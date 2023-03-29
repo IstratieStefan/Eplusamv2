@@ -26,6 +26,7 @@ for $pair in range(1, len($support) / 2 + 1) do
     $ans *= $modifier;
     $previous = $modifier;
   else
+    $x = getNr(substr($support, 0, 1));
     global.property["input"] = $previous;
     execute_script("ranDiv", true);
     $modifier = global.property["output"];
