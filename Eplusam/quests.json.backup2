@@ -1,11 +1,5 @@
 {
   "quests": [
-    {
-      "id": "QUEST_0001",
-      "name": "Miscare",
-      "description": "Avanseaza la blocul de piatra.",
-      "tags": [],
-    }
   ],
   "localized": false
 }
