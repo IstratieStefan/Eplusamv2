@@ -11,3 +11,7 @@ add_effect("summon", coord[-2, 5, 16], "eff3");
 for $i in range(0, 6) do
   disable_effect(entity["eff" + str($i)]);
 end;
+widget["healths"].element["0015"].item = "ITEM_0001";
+widget["healths"].element["0016"].item = "ITEM_0003";
+widget["healths"].element["0017"].item = "ITEM_0004";
+widget["healths"].element["0018"].item = "ITEM_0005";

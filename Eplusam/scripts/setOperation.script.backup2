@@ -3,6 +3,8 @@ $name = "enemy" + global.property["fighterID"];
 function getNr($x) begin
   $name = "enemy" + global.property["fighterID"];
   print(entity[$name].property[$x + "Min"]);
+  print(entity[$name].property[$x + "Max"]);
+  print(random(entity[$name].property[$x + "Min"], entity[$name].property[$x + "Max"]));
   return random(entity[$name].property[$x + "Min"], entity[$name].property[$x + "Max"]);
 end;
 $support = entity[$name].property[str(random(1, entity[$name].property["range"]))];

@@ -1,0 +1,13 @@
+$battleNr = 20;
+if global.property["fought"] >= $battleNr then
+	global.property["battleID"] = "battle_21.json";
+	execute_script("battle");
+	global.property["preScript"] = "";
+	global.property["posScript"] = "";
+	global.property["map"] = "pyramid insides";
+	global.property["x"] = -3;
+	global.property["y"] = -26;
+	global.property["z"] = 0;
+else
+	display_message("Pentru a accesa aceasta batalie, va trebui sa termini toate bataliile anterioare!");
+end;

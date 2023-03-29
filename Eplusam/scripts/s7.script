@@ -1,0 +1,14 @@
+$battleNr = 6;
+if global.property["fought"] >= $battleNr then
+	global.property["battleID"] = "battle_07.json";
+	execute_script("battle");
+	global.property["preScript"] = "";
+	global.property["posScript"] = "";
+	global.property["map"] = "Cave 1";
+	global.property["x"] = -17;
+	global.property["y"] = -50;
+	global.property["z"] = 0;
+else
+	display_message("Pentru a accesa aceasta batalie, va trebui sa termini toate bataliile anterioare!");
+end;	
+
