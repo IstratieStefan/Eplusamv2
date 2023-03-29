@@ -1,0 +1,17 @@
+$divizori = array[];
+$d = 1;
+while $d * $d < $x do
+  if $x / $d == round($x / $d) then
+    $divizori.push_back($d);
+    $divizori.push_back($x / $d);
+  end  ;
+  $d += 1;
+end;
+if $d * $d == $x then
+  $divizori.push_back($d);
+end;
+$r = len($divizori);
+$r -= 1;
+$r = random(0, $r);
+print($divizori);
+return $divizori[$r];

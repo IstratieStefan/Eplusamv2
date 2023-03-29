@@ -1,0 +1,40 @@
+  global.property["questionCompleted"] = false;
+$name = "enemy" + global.property["fighterID"];
+function getNr($x) begin
+  $name = "enemy" + global.property["fighterID"];
+  return random(entity[$name].property[$x + "Min"], entity[$name].property[$x + "Max"]);
+end;
+$support = entity[$name].property[str(random(1, entity[$name].property["range"]))];
+$ans = getNr(substr($support, 0, 1));
+$expression = str($ans) + " ";
+$previous = $ans;
+for $pair in range(1, len($support) / 2 + 1) do
+  $expression = $expression + substr($support, $pair * 2 - 1, 1);
+  $expression = $expression + " ";
+  $nrr = $pair * 2 - 1;
+  $symbol = substr($support, $nrr, 1);
+  if $symbol == "+" then
+    $modifier = getNr(substr($support, $pair * 2, 1));
+    $ans += $modifier;
+    $previous = $modifier;
+  elseif $symbol == "-" then
+    $modifier = getNr(substr($support, $pair * 2, 1));
+    $ans -= $modifier;
+    $previous = $modifier;
+  elseif $symbol == "×" then
+    $modifier = getNr(substr($support, $pair * 2, 1));
+    $ans *= $modifier;
+    $previous = $modifier;
+  else
+    global.property["input"] = $previous;
+    execute_script("ranDiv", true);
+    $modifier = global.property["output"];
+    $ans /= $modifier;
+    $previous = $modifier;
+  end  ;
+  $expression = $expression + str($modifier);
+  $expression = $expression + " ";
+end;
+global.property["expression"] = $expression;
+global.property["ans"] = $ans;
+widget["answer"].element["0003"].text = global.property["expression"] + "= ?";

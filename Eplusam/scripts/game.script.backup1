@@ -1,2 +1,2 @@
-global.property["battleID"] = "battle_01";
+global.property["battleID"] = "battle_01.json";
 execute_script("battle", false);

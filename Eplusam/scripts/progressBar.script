@@ -1,1 +1,10 @@
-display_message("Hello, world!");
+global.property["questionCompleted"] = true;
+global.property["currentTime"] = global.property["progressTime"];
+while global.property["currentTime"] > 0 and global.property["questionCompleted"] do
+  wait(global.property["timeAmplifier"]);
+  global.property["currentTime"] -= 1;
+end;
+if global.property["questionCompleted"] == true then
+  global.property["questionCompleted"] = false;
+  execute_script("finish", false);
+end;

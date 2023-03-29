@@ -1,2 +1,2 @@
-global.property[""] = "";
+global.property["battleID"] = "battle_01";
 execute_script("battle", false);

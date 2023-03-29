@@ -1,11 +1,11 @@
 {
     "arena":"plains colosseum",
     "positions":[
-        "skeleton",
-        "zombie",
+        "-",
+        "-",
+        "slime",
         "slime",
         "-",
-        "zombie",
-        "slime"
+        "-"
     ]
 }
