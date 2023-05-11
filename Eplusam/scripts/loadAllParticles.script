@@ -1,16 +1,3 @@
-load_map("Home Town", coord[-1, 10, 0], NORTH);
-add_effect("sparkle", coord[-5, -11, 16], "ef");
-enable_effect(entity["ef"]);
-load_map("plains colosseum", coord[1, -3, 0], SOUTH);
-add_effect("summon", coord[1, 2, 16], "eff2");
-add_effect("summon", coord[-2, 2, 16], "eff1");
-add_effect("summon", coord[4, 2, 16], "eff0");
-add_effect("summon", coord[1, 5, 16], "eff5");
-add_effect("summon", coord[4, 5, 16], "eff4");
-add_effect("summon", coord[-2, 5, 16], "eff3");
-for $i in range(0, 6) do
-  disable_effect(entity["eff" + str($i)]);
-end;
 widget["healths"].element["0015"].item = "ITEM_0001";
 widget["healths"].element["0016"].item = "ITEM_0003";
 widget["healths"].element["0017"].item = "ITEM_0004";

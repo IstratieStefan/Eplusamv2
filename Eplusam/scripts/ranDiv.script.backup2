@@ -1,5 +1,3 @@
-print("ranDivStart");
-print("ranDivStart");
 $x = global.property["input"];
 $divizori = array[];
 $d = 1;
@@ -17,6 +15,3 @@ $r = len($divizori);
 $r -= 1;
 $r = random(0, $r);
 global.property["output"] = $divizori[$r];
-print("ranDivEnd");
-print(global.property["output"]);
-print($x);

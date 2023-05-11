@@ -1,10 +1,16 @@
+play_animation(entity["enemy" + global.property["fighterID"]], "attack");
+add_character("green_attack", "test", "test01");
+move_character(entity["test01"], "pl");
+wait(0.5);
+remove_entity(entity["test01"]);
+global.property["timeAmplifier"] = 1;
+global.property["damageAmplifier"] = 1;
+global.property["shieldAmplifier"] = 1;
 show_widget("answer");
 show_widget("timer");
 set_global_property("totalOperations", random(entity["enemy" + global.property["fighterID"]].property["AttCtMin"], entity["enemy" + global.property["fighterID"]].property["AttCtMax"]));
 set_global_property("executedOperations", 1);
 set_global_property("correctOperations", 0);
 set_global_property("progressTime", global.property["totalOperations"] * entity["enemy" + global.property["fighterID"]].property["opTime"]);
-print(global.property["totalOperations"]);
-print(entity["enemy" + global.property["fighterID"]].property["opTime"]);
 execute_script("progressBar", false);
 execute_script("setOperation", false);

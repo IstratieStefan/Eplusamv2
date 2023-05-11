@@ -1,0 +1,8 @@
+lock_camera();
+set_player_movement_locked(true);
+add_character("zombie", "sp1", "inamic1");
+add_character("slime", "sp2", "inamic2");
+entity["inamic1"].behavior["move_direction"] = "none";
+entity["inamic2"].behavior["move_direction"] = "none";
+move_character(entity["inamic1"], "poz4");
+execute_script("cut1.2", false);
