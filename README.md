@@ -10,14 +10,22 @@
 
 ## Instalare 
 
-Pentru a rula aplicația este nevoie de:
-- Instalarea aplicației : o să fie un link, promitem
-- Rularea fișierului exe
+[Linkul de instalare](https://istratie-stefan.itch.io/eplusam)
 
 ## Aplicația
+Acesta este lumea in care te poti plimba
+![lume](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/town.png)
 
-O să fie screenshot-uri, promitem
+Aceasta este o batalie matematematica
+![battle](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/battle.png)
 
+Asa arata interfata cand castigi
+![Win](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/castig.png)
+
+Exista si alte zone cum ar fi o pestera, o zona inghetata sau un desert
+![cave](https://github.com/IstratieStefan/Eplusamv2/blob/main/Screenshots/cave.png)
+
+scopul jocului este de a invinge vrajitorul Eplusam
 ## Tehnologii folosite
 
 - Git + Github
