@@ -1,0 +1,13 @@
+{
+    "arena":"desert colosseum",
+    "positions":[
+        "star",
+        "skeleton",
+        "skeleton",
+        "star",
+        "-",
+        "-"
+    ],
+    "wage":140,
+    "number":27
+}

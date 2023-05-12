@@ -7,10 +7,11 @@ else
   global.property["currentTime"] -= 1;
 end;
 if global.property["executedOperations"] == global.property["totalOperations"] then
-  global.property["questionCompleted"] = true;
+  global.property["questionCompleted"] = false;
   execute_script("finish", false);
 else
   execute_script("setOperation", false);
 end;
 global.property["executedOperations"] += 1;
 widget["answer"].element["0001"].text = "";
+print(entity["enemy0"]);

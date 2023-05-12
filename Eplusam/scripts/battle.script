@@ -25,7 +25,8 @@ for $enemy in $dat["positions"] do
   end  ;
   $index += 1;
 end;
-if global.property["preScript"] != "" then
+if global.property["preScript"] != "" and global.property["preScript"] != null then
+  print(global.property["preScript"]);
   start_dialogue(global.property["preScript"]);
 end;
 show_widget("healths");

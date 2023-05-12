@@ -1,5 +1,5 @@
 {
-    "arena":"ice colloseum",
+    "arena":"plains colosseum",
     "positions":[
         "zombie",
         "slime",
@@ -8,6 +8,6 @@
         "-",
         "-"
     ],
-    "wage":5,
+    "wage":10,
     "number":1
 }

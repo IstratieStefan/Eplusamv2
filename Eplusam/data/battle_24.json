@@ -1,0 +1,13 @@
+{
+    "arena":"desert colosseum",
+    "positions":[
+        "desert_zombie",
+        "desert_zombie",
+        "desert_zombie",
+        "desert_zombie",
+        "-",
+        "-"
+    ],
+    "wage":130,
+    "number":25
+}

@@ -1,9 +1,17 @@
-display_message("Ai castigat si ai obtinut niste bani! Apasa tasta F pentru a deschide inventarul si a vedea cati bani ai.");
 wait(2);
 player.stat["currency"] += data[global.property["battleID"]]["wage"];
 for $i in range(0, 6) do
-  remove_entity(entity["enemy"+str($i)]);
+  remove_entity(entity["enemy" + str($i)]);
 end;
-load_map(global.property["map"], coord[global.property["x"], global.property["y"], global.property["z"]], SOUTH);
 hide_widget("healths");
 set_player_interaction_locked(false);
+if data[global.property["battleID"]]["number"] > global.property["fought"] then
+  global.property["fought"] += 1;
+end;
+if global.property["posScript"] == "" or global.property["posScript"] == null then
+  display_message("Ai castigat si ai obtinut niste bani! Apasa tasta F pentru a deschide inventarul si a vedea cati bani ai.");
+  load_map(global.property["map"], coord[global.property["x"], global.property["y"], global.property["z"]], SOUTH);
+end;
+if global.property["posScript"] != "" then
+  start_dialogue(global.property["posScript"]);
+end;

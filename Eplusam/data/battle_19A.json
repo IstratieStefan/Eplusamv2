@@ -1,0 +1,13 @@
+{
+    "arena":"ice colosseum",
+    "positions":[
+        "sobolan",
+        "bat",
+        "tundra_slime",
+        "tundra_slime",
+        "tundra_skeleton",
+        "zombie"
+    ],
+    "wage":105,
+    "number":20
+}
