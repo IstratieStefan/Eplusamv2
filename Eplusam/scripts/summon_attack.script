@@ -1,0 +1,4 @@
+add_character(entity["enemy" + global.property["fighterID"]].property["attack_type"], "p" + global.property["fighterID"], "particle");
+move_character(entity["particle"], "pl");
+wait(0.5);
+remove_entity(entity["particle"]);

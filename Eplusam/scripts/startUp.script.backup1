@@ -1,5 +1,6 @@
-execute_script("loadAllParticles", false);
+execute_script("srthshsthst", false);
 $ok = display_choices("Inainte de a incepe jocul, doreste sa incerci tutorialul? Daca nu ai mai jucat pana acum Eplusam, recomandam tutorialul.", array["Da", "Nu"], initiator);
+execute_script("loadAllParticles", true);
 if $ok == 0 then
   execute_script("tutorial", false);
 else

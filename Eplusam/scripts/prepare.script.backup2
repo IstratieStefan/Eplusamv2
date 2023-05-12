@@ -1,8 +1,8 @@
 play_animation(entity["enemy" + global.property["fighterID"]], "attack");
-add_character("green_attack", "test", "test01");
-move_character(entity["test01"], "pl");
+add_character(entity["enemy" + global.property["fighterID"]].property["attack_type"], "p" + global.property["fighterID"], "particle");
+move_character(entity["particle"], "pl");
 wait(0.5);
-remove_entity(entity["test01"]);
+remove_entity(entity["particle"]);
 global.property["timeAmplifier"] = 1;
 global.property["damageAmplifier"] = 1;
 global.property["shieldAmplifier"] = 1;

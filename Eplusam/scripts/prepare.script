@@ -1,8 +1,5 @@
 play_animation(entity["enemy" + global.property["fighterID"]], "attack");
-add_character(entity["enemy" + global.property["fighterID"]].property["attack_type"], "e"+global.property["fighterID"], "particle");
-move_character(entity["particle"], "pl");
-wait(0.5);
-remove_entity(entity["particle"]);
+execute_script("summon_attack");
 global.property["timeAmplifier"] = 1;
 global.property["damageAmplifier"] = 1;
 global.property["shieldAmplifier"] = 1;

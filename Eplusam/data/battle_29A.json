@@ -1,12 +1,12 @@
 {
     "arena":"desert colosseum",
     "positions":[
-        "Eplusam",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-"
+        "star",
+        "desert_zombie",
+        "eye",
+        "desert_slime",
+        "desert_zombie",
+        "star"
     ],
     "wage":150,
     "number":28
